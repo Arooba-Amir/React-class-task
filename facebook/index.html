@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+      
+</head>
+
+<body>
+    <div id="mydiv">
+        Hello World
+
+    </div>
+    <script type="text/babel">
+
+        class Hello extends React.Component {
+            render() {
+                return (
+                    
+      <div className="row">
+		<div className="col-1">
+			<h1>facebook</h1>
+			<h3>Recent logins</h3>
+			<h5>Click your picture or add an account.</h5>
+	   </div>
+       <div className="col-2">
+		<div className="login">
+            <form>
+                <input type="email" placeholder="email or phone " /> <br/>
+                <input type="password" placeholder="password " /><br />
+                <button type="submit"> Submit</button><br/>
+                </form>
+                <p>forgotten password?</p>
+                <div className="button">
+	               	Create  new account
+
+	               </div>
+
+
+
+            </div>
+            <span><b>Create a Page </b> for a celebrity, brand or business.</span>  
+      
+            </div>
+    
+       </div>
+            
+                )
+
+            }
+        }
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+
+    </script>
+</body>
+
+</html>
